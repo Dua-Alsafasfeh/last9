@@ -32,11 +32,11 @@ function Home() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://images.pexels.com/photos/827519/pexels-photo-827519.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          src="img/image.jpg"
           alt="Second slide" height={600}
         />
 
-        <Carousel.Caption style={{background:'rgba(0, 0, 0, .5)'}}>
+        <Carousel.Caption style={{background:'rgba(0, 0, 0, .5)', bottom: '14.25rem'}}>
           <h1 className='text-white'>Welcome to Epic Antiques</h1>
           <h4 className='text-primary'>We offer here unique antique pieces that are rare</h4>
           <a href="/add-product" class="btn btn-primary py-3 px-5 mr-5 animated slideInLeft">START SELLING</a>
@@ -51,7 +51,7 @@ function Home() {
           alt="Third slide" height={600}
         />
 
-        <Carousel.Caption style={{background:'rgba(0, 0, 0, .5)'}}>
+        <Carousel.Caption style={{background:'rgba(0, 0, 0, .5)', bottom: '14.25rem'}}>
           <h1 className='text-white'>Welcome to Epic Antiques</h1>
           <h4 className='text-primary'>
           We offer here unique antique pieces that are rare
@@ -66,7 +66,7 @@ function Home() {
           src="img/5432421.jpg"
           alt="First slide" height={600}
         />
-        <Carousel.Caption style={{background:'rgba(0, 0, 0, .5)'}}>
+        <Carousel.Caption style={{background:'rgba(0, 0, 0, .5)', bottom: '14.25rem'}}>
           <h1 className='text-white'>Welcome to Epic Antiques </h1>
           <h4 className='text-primary'>We offer here unique antique pieces that are rare</h4>
       <a href="/add-product" class="btn btn-primary py-3 px-5 mr-5 animated slideInLeft">START SELLING</a>
@@ -190,10 +190,10 @@ Every piece here has a story and history, and our experts will introduce it to y
           <div className="service-item d-flex position-relative text-center h-100">
             <img className="bg-img" src={"img/" + u.img} alt="" />
             <div className="service-text p-5">
-              <img className="mb-4" src="img/icons/icon-9.png" alt="Icon" />
+              <img className="mb-4" src={"img/" + u.img} alt="Icon" height={100} />
               <h3 className="mb-3">{u.name}</h3>
               <p className="mb-4">
-              {u.description}
+              {u.min_price}JD
               </p>
               <a className="btn" href="">
               <a href={'/single/' + u.id} className="btn p-2 mr-2">

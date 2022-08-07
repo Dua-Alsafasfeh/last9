@@ -82,12 +82,21 @@ function Single1() {
     var daydiff = diff / (1000 * 60 * 60 * 24);
     console.log(daydiff, 'roaa');
 
+let path='/single/'+params.id;
+
+const handelpath=()=>{
+    sessionStorage.setItem("user_path", path);
+    window.location.href='/login'
+}
+
     useEffect(() => {
         // setTimer(true);
+        
         document.getElementById('heigh').style.display = "none";
         document.getElementById('win').style.display = "none";
         if (daydiff > 0) {
             // setTimer(true);
+            document.getElementById('heigh').style.display = "none";
             getauc();
             gitMix();
             if (maxPrice.user_id == user_id) {
@@ -144,12 +153,12 @@ function Single1() {
 
     const handelPrice = (event) => {
         event.preventDefault();
-        document.getElementById('er').style.display = "none";
+        
         setSubmit(newPrice);
-
+        document.getElementById('er').style.display = "none";
         if (parseInt(inf.min_price) < parseInt(submit)) {
             document.getElementById('er').style.display = "none";
-            window.location="/single";  
+             
         }
         else {
             document.getElementById('er').style.display = "block";
@@ -210,27 +219,24 @@ function Single1() {
                                             <h2 className="text-uppercase">{inf.name}</h2>
                                             <div className="price d-flex flex-row align-items-center">
                                             <UilCoins className="text-primary"/>
-                                                <span className="act-price text-dark">{inf.min_price} JD</span>
+                                                <span className="act-price text-dark" style={{fontWeight:'bolder', fontSize:'large'}}>{inf.min_price} JD</span> <br></br>
                                             </div>
 
-                                            <p>{auc} <code> [bids]</code></p>
-                                            <p style={{color:'red',fontSize: 'large',
-    fontWeight: 'bold'}}> this auction will end in {inf.end_date} </p>
-
-                                            <p className='text-dark'><UilMoneyInsert className="text-primary"/>{auc} <code> [bids]</code></p>
+                                        
                                             
-                                            <p className='text-dark'><UilCalendarAlt className="text-primary"/> this auction will end in {inf.end_date} </p>
+                                            <p className='text-dark' style={{fontSize: 'large',
+    fontWeight: 'bold'}}><UilCalendarAlt className="text-primary"/> this auction will end in {inf.end_date} </p>
 
                                         </div>
-                                        <p className="about text-dark"><UilFileInfoAlt className="text-primary"/>
+                                        <p className="about text-dark">
                                             {inf.description}
                                         </p>
                                         <div class="alert alert-danger" role="alert" id='end' style={{ display: 'none' }}>
                                             This auction has ended!
                                         </div>
                                         <div className="cart mt-4 align-items-center" id='bid'>
-                                            <input className="btn  mr-2 px-4" style={{border:'1px solid'}} placeholder='Bit Now' type={'number'} onChange={(e) => setNewP(e.target.value)} />
-                                            {user_id ? <button type="" className="btn btn-block " style={{ backgroundColor: '#FDBE33', }} onClick={handelPrice}>Bid Now</button> : <><button type="" className="btn btn-block " style={{ backgroundColor: '#FDBE33', }} disabled>Bid Now</button> <span style={{ color: 'red' }}> * Login to Bid</span></>}
+                                            <input className="btn  mr-2 px-4" style={{border:'1px solid', width:'40%'}} placeholder='Bitd Now' type={'number'} onChange={(e) => setNewP(e.target.value)} />
+                                            {user_id ? <button type="" className="btn btn-block " style={{ backgroundColor: '#FDBE33', marginLeft: '2%'}} onClick={handelPrice}>Bid Now</button> : <><button type="" className="btn btn-block " style={{ backgroundColor: '#FDBE33', marginLeft: '2%'}} onClick={handelpath}>Bid Now</button> </>}
                                             <br></br>
                                             <small style={{ color: 'red', display: 'none' }} id='er'>Your bid should be more than the price</small>
                                         </div>
