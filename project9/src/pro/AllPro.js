@@ -67,10 +67,10 @@ function AllPro(){
           <div className="service-item d-flex position-relative text-center h-100">
             <img className="bg-img" src={"img/" + u.img} alt="" />
             <div className="service-text p-5">
-              <img className="mb-4" src="img/icons/icon-9.png" alt="Icon" />
+              <img className="mb-4" src={"img/" + u.img}  height={100} alt="Icon" />
               <h3 className="mb-3">{u.name}</h3>
               <p className="mb-4">
-              {u.description}
+              {u.min_price}JD
               </p>
               <a className="btn" href="">
               <a href={'/single/' + u.id} className="btn p-2 mr-2">

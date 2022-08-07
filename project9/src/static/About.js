@@ -116,7 +116,7 @@ function About() {
         <div className="col-lg-4 col-md-3 wow fadeInUp" data-wow-delay="0.1s" style={{height:'50%'}}>
           <div className="team-item position-relative">
             <div className="position-relative">
-              <img className="img-fluid" src="https://avatars.githubusercontent.com/u/100237201?v=4" alt="Hadi" style={{height:'370px', width:'328px'}}/>
+              <img className="img-fluid" src="img/hadi.jpg" alt="Hadi" style={{height:'370px', width:'328px'}}/>
               <div className="team-social text-center">
                 <a className="btn btn-square" href="https://www.linkedin.com/in/hadi-alsaden-174408232/" target="_blank">
                   <UilLinkedinAlt />
@@ -138,7 +138,7 @@ function About() {
         <div className="col-lg-4 col-md-3 wow fadeInUp" data-wow-delay="0.3s">
           <div className="team-item position-relative">
             <div className="position-relative">
-              <img className="img-fluid" src="https://avatars.githubusercontent.com/u/100213753?v=4" alt="Dua" style={{height:'370px', width:'328px'}}/>
+              <img className="img-fluid" src="img/duaa.jpg" alt="Dua" style={{height:'370px', width:'328px'}}/>
               <div className="team-social text-center">
                 <a className="btn btn-square" href="https://www.linkedin.com/in/du-a-alsafasfeh-70a9a7147/" target="_blank">
                   <UilLinkedinAlt />
@@ -160,7 +160,7 @@ function About() {
         <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
           <div className="team-item position-relative">
             <div className="position-relative">
-              <img className="img-fluid" src="https://avatars.githubusercontent.com/u/100213822?v=4" alt="Saja" style={{height:'370px', width:'328px'}}/>
+              <img className="img-fluid" src="img/saja (2).jpg" alt="Saja" style={{height:'370px', width:'328px'}}/>
               <div className="team-social text-center">
                 <a className="btn btn-square" href="https://www.linkedin.com/in/saja-al-ghalayini/" target="_blank">
                   <UilLinkedinAlt />
@@ -184,7 +184,7 @@ function About() {
         <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
           <div className="team-item position-relative">
             <div className="position-relative">
-              <img className="img-fluid" src="https://avatars.githubusercontent.com/u/100063786?v=4" alt="Ro'a" style={{height:'370px', width:'328px'}}/>
+              <img className="img-fluid" src="img/roa.jpg" alt="Ro'a" style={{height:'370px', width:'328px'}}/>
               <div className="team-social text-center">
                 <a className="btn btn-square" href="https://www.linkedin.com/in/roayaseen/" target="_blank">
                   <UilLinkedinAlt />
@@ -206,7 +206,7 @@ function About() {
         <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
           <div className="team-item position-relative">
             <div className="position-relative">
-              <img className="img-fluid" src="https://avatars.githubusercontent.com/u/100212077?v=4" alt="Tamara" style={{height:'370px', width:'328px'}}/>
+              <img className="img-fluid" src="img/tamara.jpg" alt="Tamara" style={{height:'370px', width:'328px'}}/>
               <div className="team-social text-center">
                 <a className="btn btn-square" href="https://www.linkedin.com/in/tamara-al-shabatat-060452123/" target="_blank">
                   <UilLinkedinAlt />

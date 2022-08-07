@@ -4,13 +4,19 @@ import { useSelector, useDispatch } from 'react-redux';
 import { login } from "../action/index";
 
 function Login() {
+    let path = sessionStorage.getItem("user_path");
     const dispatch = useDispatch();
     const admin = useSelector(state => state.login.admin);
     const error = useSelector(state => state.login.error);
 
     if (admin !== '') {
         sessionStorage.setItem("user_info", admin);
-        window.location.href = "/";
+        if (path){
+            window.location.href = path
+        }else{
+            window.location.href = "/";
+        }
+        
     }
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
